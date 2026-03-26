@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Agronômico - Bruno Adelino</title>
+    <style>
+        :root {
+            --primary-color: #1b5e20; /* Verde Escuro Profissional */
+            --accent-color: #43a047;
+            --bg-color: #f0f4f0;
+            --text-dark: #212121;
+            --text-light: #ffffff;
+            --special-tool: #2c3e50; /* Cor para ferramentas de gestão */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 480px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 8px solid var(--primary-color);
+        }
+
+        .header {
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--text-dark);
+            margin: 0;
+            font-size: 1.6rem;
+            line-height: 1.2;
+        }
+
+        .identificacao {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 6px 16px;
+            background-color: #e8f5e9;
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            display: block;
+            text-decoration: none;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+        }
+
+        .menu-item:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo para ferramentas de gestão (primeiro e último) */
+        .tools {
+            background-color: var(--special-tool);
+        }
+        .tools:hover {
+            background-color: #34495e;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        
+        <h1>Painel de Ferramentas</h1>
+        <div class="identificacao">Eng. Agrônomo Bruno Adelino de Melo</div>
+    </div>
+    
+    <nav class="menu-grid">
+        <a href="https://bamelo.github.io/fertirrigacao/" target="_blank" class="menu-item tools">
+            Assistente de Agendamento de Fertirrigação
+        </a>
+
+        <a href="https://thiagoadelino.github.io/lab-analise/calculadora-irrigacao-p/" target="_blank" class="menu-item">
+            Calculadora de Irrigação: Pimenta
+        </a>
+        
+        <a href="https://bamelo.github.io/milho/" target="_blank" class="menu-item">
+            Calculadora de Irrigação: Milho
+        </a>
+        
+        <a href="https://bamelo.github.io/macaxeira/" target="_blank" class="menu-item">
+            Calculadora de Irrigação: Macaxeira/Mandioca
+        </a>
+        
+        <a href="https://bamelo.github.io/fitotecnia/" target="_blank" class="menu-item">
+            Calculadora de Irrigação: Brócolis
+        </a>
+
+        <a href="https://bamelo.github.io/defensivos/" target="_blank" class="menu-item tools">
+            Sequenciador de Defensivos
+        </a>
+    </nav>
+
+    <footer>
+        &copy; 2026 - Bruno Adelino de Melo
+    </footer>
+</div>
+
+</body>
+</html>
